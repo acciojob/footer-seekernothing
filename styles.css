@@ -1,1 +1,127 @@
 /* your code here */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo_name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .media-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .media-icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+			border-radius:10px;
+			padding:2px;
+			
+        }
+
+        .media-icons .fa-facebook { background: #3b5998; padding:11px; border-radius:100%;}
+        .media-icons .fa-twitter { background: #1da1f2; padding:10px;border-radius:100%;}
+        .media-icons .fa-instagram { background: #e1306c;padding:10px;border-radius:100%; }
+        .media-icons .fa-linkedin { background: #0077b5;padding:10px; border-radius:100%;}
+        .media-icons .fa-youtube { background: #ff0000; padding:10px;border-radius:100%;}
+
+        .link-boxes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .link-boxes > div {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .link-boxes h3 {
+            position: relative;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        .link-boxes h3::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: white;
+        }
+
+        .link-boxes ul {
+            list-style: none;
+        }
+
+        .link-boxes ul li {
+            margin-bottom: 10px;
+        }
+
+        .link-boxes a {
+            color: #d9d9d9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link-boxes a:hover {
+            color: white;
+        }
+
+        .bottom-details {
+            background: #2c303a;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .link-boxes > div {
+                min-width: 150px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .top {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .link-boxes > div {
+                flex: 100%;
+            }
+        }
